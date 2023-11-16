@@ -20,10 +20,20 @@ body {
 
 /* Button */
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 2em;
-  color: var(--white);
-  background-color: var(--blue);
   font-weight: 400;
   font-style: normal;
+  color: var(--white);
+}
+
+.button-gray {
+  background-color: var(--lighter-gray);
+}
+
+.button-blue {
+  background-color: var(--blue);
 }

@@ -29,7 +29,9 @@ function Navbar() {
           <NavLink to="/insights" className="nav-link">
             Insights
           </NavLink>
-          <button className="button contact-us-button">Contact Us</button>
+          <button className="button button-blue contact-us-button">
+            Contact Us
+          </button>
         </Col>
       </Row>
     </nav>
