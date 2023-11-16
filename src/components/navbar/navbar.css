@@ -6,6 +6,7 @@
   width: 100%;
   background-color: var(--black);
   color: var(--pure-white);
+  z-index: 10;
 }
 
 .brand-name,
