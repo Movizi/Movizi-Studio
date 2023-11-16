@@ -1,0 +1,57 @@
+/* Meet Us Card */
+.meet-card {
+  background-color: var(--gray);
+  border-radius: 1.5rem;
+  color: var(--white);
+}
+
+.meet-card-image {
+  border-radius: 100%;
+}
+
+.meet-card-title {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.meet-card-text {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.meet-card-text:first-of-type {
+  color: var(--light-gray);
+}
+
+.meet-card-text:last-of-type {
+  color: var(--white);
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .meet-card-image {
+    width: 5.5em;
+    height: 5.5em;
+    margin-bottom: 1em;
+  }
+
+  .meet-card-title {
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+  }
+
+  .meet-card-text:first-of-type {
+    font-size: 1.125em;
+  }
+
+  .meet-card-text:last-of-type {
+    font-size: 1em;
+  }
+
+  .schedule-call-button {
+    padding: 0.88em 2.5em;
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+}
