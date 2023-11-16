@@ -1,0 +1,68 @@
+/* Welcome */
+.welcome-title,
+.welcome-text {
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+
+.message {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 5em;
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: 100%;
+}
+
+.message {
+  transition: width 0.8s ease;
+}
+
+.message > span {
+  transition: 0.4s linear;
+}
+
+.message > span {
+  opacity: 1;
+}
+
+.welcome-text {
+  text-align: end;
+}
+
+.shrink-text {
+  width: 1.6em;
+}
+
+.shrink-text > span {
+  opacity: 0;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .welcome {
+    padding: 10em 0 0;
+    margin-bottom: 2em;
+  }
+
+  .welcome-title-container {
+    margin-bottom: 5em;
+  }
+
+  .welcome-title {
+    font-size: 4.8em;
+    width: 40rem;
+  }
+
+  .message {
+    padding: 0.875rem 2.2rem;
+    margin: 1rem 0;
+    font-size: 0.97em;
+  }
+
+  .welcome-text {
+    width: 27em;
+    font-size: 1.25em;
+  }
+}
