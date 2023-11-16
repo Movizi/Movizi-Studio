@@ -18,6 +18,24 @@ body {
   font-family: var(--poppins) !important;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--pure-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-blue);
+}
+
 /* Button */
 .button {
   display: flex;
