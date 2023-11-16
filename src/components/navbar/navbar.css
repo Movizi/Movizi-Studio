@@ -1,1 +1,58 @@
 /* Navbar */
+.navigation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--pure-white);
+}
+
+.brand-name,
+.nav-link {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nav-links > :last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  transition: 0.2s ease;
+}
+
+.nav-link:hover,
+.navigation .active {
+  color: var(--blue);
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .navigation {
+    padding: 0.8em 3.75em;
+  }
+
+  .brand-logo {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 0.5em;
+  }
+
+  .brand-name {
+    font-size: 1.75em;
+  }
+
+  .nav-links > * {
+    margin-right: 2.5em;
+  }
+
+  .nav-link,
+  .contact-us-button {
+    font-size: 1em;
+  }
+
+  .contact-us-button {
+    padding: 0.8em 2.5em;
+  }
+}
