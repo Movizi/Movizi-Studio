@@ -1,1 +1,8 @@
 /* Root Layout */
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .main-content {
+    padding: 0 3.75em;
+  }
+}
