@@ -33,7 +33,7 @@ function Welcome() {
       <div className="welcome-title-container d-flex justify-content-start align-items-center">
         <h1 className="welcome-title">
           <span>We make</span>
-          <div className={`message ${shrink ? "shrink-text" : ""}`}>
+          <div className={`highlighted-text-blue message ${shrink ? "shrink-text" : ""}`}>
             <span>{chosenWord}</span>
           </div>
           <span>digital Products.</span>
