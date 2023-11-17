@@ -55,3 +55,19 @@ body {
 .button-blue {
   background-color: var(--blue);
 }
+
+/* Highlighted Text */
+.highlighted-text-blue,
+.highlighted-text-white {
+  border-radius: 5em;
+}
+
+.highlighted-text-blue {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.highlighted-text-white {
+  background-color: var(--white);
+  color: var(--blue);
+}
