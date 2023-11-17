@@ -7,15 +7,9 @@
 }
 
 .message {
-  background-color: var(--blue);
-  color: var(--white);
-  border-radius: 5em;
   overflow: hidden;
   text-wrap: nowrap;
   width: 100%;
-}
-
-.message {
   transition: width 0.8s ease;
 }
 
@@ -51,18 +45,35 @@
   }
 
   .welcome-title {
-    font-size: 4.8em;
-    width: 40rem;
+    font-size: 6em;
+    width: 52rem;
   }
 
   .message {
-    padding: 0.875rem 2.2rem;
+    padding: 0.875rem 3rem;
     margin: 1rem 0;
-    font-size: 0.97em;
+    font-size: 1em;
   }
 
   .welcome-text {
     width: 27em;
-    font-size: 1.25em;
+    font-size: 1.5em;
+  }
+
+  /* Below 1440px */
+  @media only screen and (width <= 1440px) {
+    .welcome-title {
+      font-size: 4.8em;
+      width: 40rem;
+    }
+
+    .message {
+      padding: 0.875rem 2.2rem;
+      font-size: 0.97em;
+    }
+
+    .welcome-text {
+      font-size: 1.25em;
+    }
   }
 }

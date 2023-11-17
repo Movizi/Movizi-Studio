@@ -31,17 +31,17 @@
 /* Desktop */
 @media only screen and (width >= 1024px) {
   .navigation {
-    padding: 0.8em 3.75em;
+    padding: 0.6em 6em;
   }
 
   .brand-logo {
-    width: 2.5em;
-    height: 2.5em;
+    width: 3em;
+    height: 3em;
     margin-right: 0.5em;
   }
 
   .brand-name {
-    font-size: 1.75em;
+    font-size: 2em;
   }
 
   .nav-links > * {
@@ -50,10 +50,31 @@
 
   .nav-link,
   .contact-us-button {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .contact-us-button {
-    padding: 0.8em 2.5em;
+    padding: 1em 2.5em;
+  }
+
+  /* Below 1440px */
+  @media only screen and (width <= 1440px) {
+    .navigation {
+      padding: 0.8em 3.75em;
+    }
+
+    .brand-logo {
+      width: 2.5em;
+      height: 2.5em;
+    }
+
+    .brand-name {
+      font-size: 1.75em;
+    }
+
+    .nav-link,
+    .contact-us-button {
+      font-size: 1em;
+    }
   }
 }

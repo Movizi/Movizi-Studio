@@ -58,27 +58,53 @@
 @media only screen and (width >= 1024px) {
   .footer {
     margin-top: 12em;
-    padding: 2em 3.75em;
+    padding: 2em 6em;
   }
 
   .footer-brand {
-    width: 3em;
-    height: 3em;
+    width: 3.2em;
+    height: 3.2em;
     margin-right: 1em;
   }
 
   .copyright-text {
-    font-size: 1.125em;
+    font-size: 1.2em;
   }
 
   .social-link {
-    width: 2.875em;
-    height: 2.875em;
+    width: 3.2em;
+    height: 3.2em;
     margin-right: 1em;
   }
 
   .social-link > svg {
-    width: 1.3em;
-    height: 1.3em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  /* Below 1440px */
+  @media only screen and (width <= 1440px) {
+    .footer {
+      padding: 2em 3.75em;
+    }
+
+    .footer-brand {
+      width: 3em;
+      height: 3em;
+    }
+
+    .copyright-text {
+      font-size: 1.125em;
+    }
+
+    .social-link {
+      width: 2.875em;
+      height: 2.875em;
+    }
+
+    .social-link > svg {
+      width: 1.3em;
+      height: 1.3em;
+    }
   }
 }
