@@ -46,14 +46,23 @@ body {
   font-weight: 400;
   font-style: normal;
   color: var(--white);
+  transition: 0.3s ease;
 }
 
 .button-gray {
   background-color: var(--lighter-gray);
 }
 
+.button-gray:hover {
+  background-color: #b0b0b0;
+}
+
 .button-blue {
   background-color: var(--blue);
+}
+
+.button-blue:hover {
+  background-color: #66c1ff;
 }
 
 /* Highlighted Text */
