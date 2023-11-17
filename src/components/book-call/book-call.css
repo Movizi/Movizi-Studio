@@ -28,6 +28,11 @@
   color: var(--lighter-gray);
 }
 
+#button-tooltip {
+  --bs-tooltip-bg: var(--lighter-gray);
+  font-family: var(--poppins);
+}
+
 .meet-us {
   display: flex;
 }
@@ -68,6 +73,12 @@
     margin-right: 0.5em;
   }
 
+  #button-tooltip {
+    --bs-tooltip-padding-x: 0.8rem;
+    --bs-tooltip-padding-y: 0.5rem;
+    font-size: 0.9em;
+  }
+
   .book-call-section > hr {
     width: 35rem;
   }
@@ -100,7 +111,7 @@
     .copy-email-button {
       font-size: 1em;
     }
-
+    
     .meet-us {
       justify-content: start;
     }
