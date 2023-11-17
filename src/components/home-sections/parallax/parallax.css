@@ -7,11 +7,6 @@
   background-color: var(--black);
 }
 
-.parallax-image {
-  width: 100%;
-  height: 100%;
-}
-
 /* Desktop */
 @media only screen and (width >= 1024px) {
   .parallax {
@@ -20,6 +15,11 @@
 
   .parallax-images-container {
     height: 75em;
+  }
+
+  .parallax-image {
+    width: 50em;
+    height: 35em;
   }
 
   .parallax-column-container .parallax-image {
@@ -42,6 +42,11 @@
   @media only screen and (width <= 1440px) {
     .parallax-images-container {
       height: 50em;
+    }
+
+    .parallax-image {
+      width: 36.9em;
+      height: 26.2em;
     }
 
     .parallax-column-container .parallax-image {
