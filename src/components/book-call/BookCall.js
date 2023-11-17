@@ -15,7 +15,12 @@ function BookCall() {
           </p>
           <h6>Or shoot us a mail</h6>
           <hr />
-          <button className="button button-gray copy-email-button">
+          <button
+            className="button button-gray copy-email-button"
+            onClick={(e) =>
+              navigator.clipboard.writeText(e.currentTarget.textContent)
+            }
+          >
             <span>hi@Movizi.studio</span>
             <span>
               <img src="/assets/icons/copy.svg" alt="copy-icon" />
