@@ -57,7 +57,6 @@
 /* Desktop */
 @media only screen and (width >= 1024px) {
   .footer {
-    margin-top: 12em;
     padding: 2em 6em;
   }
 

@@ -1,0 +1,11 @@
+.more-projects {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px;
+  text-align: center;
+}
+
+.more-projects-font {
+  font-size: 4rem;
+  line-height: 6rem;
+}
