@@ -1,5 +1,6 @@
 import "./welcome.css";
 import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const words = ["user-friendly", "detail-oriented", "jaw-dropping"];
 
@@ -8,32 +9,46 @@ function Welcome() {
   const [wordIndex, setWordIndex] = useState(0);
   const [shrink, setShrink] = useState(false);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 4000);
-
-    return () => clearInterval(intervalId);
-  }, []);
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setShrink((prevHighlighted) => !prevHighlighted);
-    }, 2000);
+    let intervalId;
+    if (inView) {
+      intervalId = setInterval(() => {
+        setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+      }, 5000);
+    }
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [inView]);
+
+  useEffect(() => {
+    let intervalId;
+    if (inView) {
+      intervalId = setInterval(() => {
+        setShrink((prevHighlighted) => !prevHighlighted);
+      }, 2500);
+    }
+
+    return () => clearInterval(intervalId);
+  }, [inView]);
 
   useEffect(() => {
     setChosenWord(words[wordIndex]);
   }, [wordIndex]);
 
   return (
-    <section className="welcome">
+    <section className="welcome" ref={ref}>
       <div className="welcome-title-container d-flex justify-content-start align-items-center">
         <h1 className="welcome-title">
           <span>We make</span>
-          <div className={`highlighted-text-blue message ${shrink ? "shrink-text" : ""}`}>
+          <div
+            className={`highlighted-text-blue message ${
+              shrink ? "shrink-text" : ""
+            }`}
+          >
             <span>{chosenWord}</span>
           </div>
           <span>digital Products.</span>
