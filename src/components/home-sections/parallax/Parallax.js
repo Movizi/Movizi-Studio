@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import "./parallax.css";
+import { useEffect } from "react";
 import Rellax from "rellax";
 
 function Parallax() {
@@ -18,22 +18,22 @@ function Parallax() {
             data-rellax-speed="4"
           >
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-6.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-1.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-2.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-3.png"
               alt="parallax-img"
             />
@@ -43,22 +43,22 @@ function Parallax() {
             data-rellax-speed="10"
           >
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-6.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-4.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-5.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-6.png"
               alt="parallax-img"
             />
@@ -68,22 +68,22 @@ function Parallax() {
             data-rellax-speed="4"
           >
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-6.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-7.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-8.png"
               alt="parallax-img"
             />
             <img
-              className="parallax-image"
+              className="parallax-image animate__animated animate__fadeIn"
               src="/assets/images/parallax-9.png"
               alt="parallax-img"
             />
