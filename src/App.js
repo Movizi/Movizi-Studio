@@ -15,7 +15,7 @@ function App() {
 
   // Smooth Page Scrolling
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({ duration: 3.5 });
 
     function raf(time) {
       lenis.raf(time);
