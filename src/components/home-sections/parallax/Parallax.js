@@ -15,7 +15,7 @@ function Parallax() {
         <div className="parallax-column-container d-flex">
           <div
             className="parallax-column d-flex flex-column"
-            data-rellax-speed="4"
+            data-rellax-speed="3"
           >
             <img
               className="parallax-image animate__animated animate__fadeIn"
@@ -40,7 +40,7 @@ function Parallax() {
           </div>
           <div
             className="parallax-column d-flex flex-column"
-            data-rellax-speed="10"
+            data-rellax-speed="6"
           >
             <img
               className="parallax-image animate__animated animate__fadeIn"
@@ -65,7 +65,7 @@ function Parallax() {
           </div>
           <div
             className="parallax-column d-flex flex-column"
-            data-rellax-speed="4"
+            data-rellax-speed="3"
           >
             <img
               className="parallax-image animate__animated animate__fadeIn"
