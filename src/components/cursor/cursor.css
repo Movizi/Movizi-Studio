@@ -1,0 +1,48 @@
+/* Cursor */
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 100%;
+  background-color: var(--blue);
+  width: 0;
+  height: 0;
+  transform-origin: 100% 100%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s ease-in-out, opacity 0.3s ease, width 0.4s ease,
+    height 0.4s ease;
+  z-index: 5;
+}
+
+.cursor > img {
+  opacity: 0;
+}
+
+.change-project-img:hover .cursor > img {
+  opacity: 1;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .change-project-img:hover .cursor {
+    width: 7em;
+    height: 7em;
+  }
+
+  .cursor > img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /* Below 1440px */
+  @media only screen and (width <= 1440px) {
+    .change-project-img:hover .cursor {
+      width: 5em;
+      height: 5em;
+    }
+
+    .cursor > img {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+}
