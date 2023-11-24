@@ -1,0 +1,48 @@
+/* Process And Approach */
+.process-approach {
+  background-color: var(--black);
+  color: var(--pure-white);
+}
+
+.process-approach > div > h1 {
+  text-align: center;
+  line-height: 1.6em;
+  margin-bottom: 0;
+}
+
+.process-approach .highlighted-text-blue {
+  padding: 0.5rem 3rem;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .process-approach {
+    padding: 6.5em 6em;
+    margin-bottom: 13.5em;
+  }
+
+  .process-approach h1 {
+    font-size: 5em;
+    margin-bottom: 7.5rem;
+  }
+
+  .process-approach-description {
+    padding: 0 7em;
+  }
+
+  .process-approach > div > h1 {
+    margin-top: 11rem;
+  }
+
+  /* Below 1440px */
+  @media only screen and (width <= 1440px) {
+    .process-approach {
+      padding: 6.5em 3.75em;
+      margin-bottom: 12.5em;
+    }
+
+    .process-approach h1 {
+      font-size: 4em;
+    }
+  }
+}
