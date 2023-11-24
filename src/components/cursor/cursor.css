@@ -17,13 +17,15 @@
   opacity: 0;
 }
 
-.change-project-img:hover .cursor > img {
+.change-project-img:hover .cursor > img,
+.process-approach-card:hover .cursor > img {
   opacity: 1;
 }
 
 /* Desktop */
 @media only screen and (width >= 1024px) {
-  .change-project-img:hover .cursor {
+  .change-project-img:hover .cursor,
+  .process-approach-card:hover .cursor {
     width: 7em;
     height: 7em;
   }
@@ -35,7 +37,8 @@
 
   /* Below 1440px */
   @media only screen and (width <= 1440px) {
-    .change-project-img:hover .cursor {
+    .change-project-img:hover .cursor,
+    .process-approach-card:hover .cursor {
       width: 5em;
       height: 5em;
     }
