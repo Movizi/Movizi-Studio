@@ -1,0 +1,84 @@
+/* Process And Approach Card */
+.process-approach-card,
+.process-approach-card > a {
+  transition: 0.3s ease;
+}
+
+.process-approach-card {
+  border-radius: 8.75em;
+  border: 2px solid var(--lighter-gray);
+}
+
+.process-approach-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.process-approach-card:hover {
+  border-color: var(--blue);
+}
+
+.process-approach-card > a {
+  color: var(--lighter-gray);
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.process-approach-card > a > * {
+  margin-bottom: 0;
+}
+
+.process-approach-card:hover > a {
+  color: var(--pure-white);
+}
+
+.process-approach-description {
+  padding: 0;
+}
+
+/* Desktop */
+@media only screen and (width >= 1024px) {
+  .process-approach-card {
+    width: 80em;
+    height: 16em;
+    padding: 4em 8em;
+    margin-bottom: 3em;
+  }
+
+  .process-approach-id {
+    font-size: 5em;
+    margin-right: 3.7rem;
+  }
+
+  .process-approach-name {
+    font-size: 3em;
+  }
+
+  .process-approach-description {
+    width: 27em;
+    font-size: 1.2em;
+  }
+
+  /* Below 1440px */
+  @media only screen and (width <= 1440px) {
+    .process-approach-card {
+      width: 68.5em;
+      height: 14.75em;
+      padding: 2.5em 7em;
+      margin-bottom: 2em;
+    }
+
+    .process-approach-id {
+      font-size: 4em;
+    }
+
+    .process-approach-name {
+      font-size: 2.5em;
+    }
+
+    .process-approach-description {
+      width: 25em;
+      font-size: 1em;
+    }
+  }
+}
