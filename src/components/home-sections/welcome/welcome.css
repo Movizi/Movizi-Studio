@@ -36,7 +36,7 @@
 /* Desktop */
 @media only screen and (width >= 1024px) {
   .welcome {
-    padding: 10em 0 0;
+    padding: 10em 6em 0 6em;
     margin-bottom: 2em;
   }
 
@@ -62,6 +62,10 @@
 
   /* Below 1440px */
   @media only screen and (width <= 1440px) {
+    .welcome {
+      padding: 10em 3.75em 0 3.75em;
+    }
+
     .welcome-title {
       font-size: 4.8em;
       width: 40rem;

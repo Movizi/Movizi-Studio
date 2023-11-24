@@ -11,6 +11,7 @@
 @media only screen and (width >= 1024px) {
   .parallax {
     margin-bottom: 12em;
+    padding: 0 6em;
   }
 
   .parallax-images-container {
@@ -44,6 +45,10 @@
 
   /* Below 1440px */
   @media only screen and (width <= 1440px) {
+    .parallax {
+      padding: 0 3.75em;
+    }
+
     .parallax-images-container {
       height: 50em;
     }

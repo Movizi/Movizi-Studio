@@ -124,6 +124,7 @@
 @media only screen and (width >= 1024px) {
   .latest-work {
     margin-bottom: 9em;
+    padding: 0 6em;
   }
 
   .latest-work-header {
@@ -200,6 +201,7 @@
   @media only screen and (width <= 1440px) {
     .latest-work {
       margin-bottom: 7.75em;
+      padding: 0 3.75em;
     }
 
     .latest-work-header {
