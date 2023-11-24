@@ -1,10 +1,10 @@
 import "./latest-work.css";
 import { useEffect, useRef, useState } from "react";
-import { Projects } from "../../../data/Projects";
+import { ProjectsData } from "../../../data/ProjectsData";
 import { Link } from "react-router-dom";
 import Cursor from "../../cursor/Cursor";
 
-const projectsData = Projects.slice(-3).reverse();
+const projectsData = ProjectsData.slice(-3).reverse();
 
 function LatestWork() {
   const [chooseProject, setChooseProject] = useState(
@@ -96,7 +96,7 @@ function LatestWork() {
           <div className="change-project-img-background-overlay d-flex justify-content-center align-items-center">
             <h1>
               {
-                Projects.find(
+                ProjectsData.find(
                   (project) => project.projectName === chooseProject
                 ).projectName
               }
@@ -104,7 +104,7 @@ function LatestWork() {
           </div>
           <img
             src={
-              Projects.find((project) => project.projectName === chooseProject)
+              ProjectsData.find((project) => project.projectName === chooseProject)
                 .projectImg
             }
             alt="project-img"
