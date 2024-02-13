@@ -1,0 +1,121 @@
+/* Insights */
+.insights-header > h1,
+.change-insight-title,
+.change-insight-img > h1 {
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+
+.change-insight-title {
+  cursor: pointer;
+}
+
+.change-insights-container > h6,
+.change-insight-description,
+.change-insight-service {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.change-insights-container {
+  background-color: var(--pure-white);
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.change-insight,
+.change-insight-title,
+.change-insight-info,
+.change-insight-active > .change-insight-info > * {
+  transition: 0.5s ease;
+}
+
+.change-insight:last-of-type {
+  margin-bottom: 0;
+}
+
+.change-insight-title {
+  color: var(--light-gray);
+  margin: 0;
+}
+
+.change-insight-info {
+  height: 0;
+}
+
+.change-insight-info > * {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.change-insight-active > .change-insight-title {
+  color: var(--black);
+}
+
+.change-insight-active > .change-insight-info > * {
+  visibility: visible;
+  opacity: 1;
+}
+
+.change-insight-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  border: 1px solid var(--black);
+  border-radius: 2rem;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.change-insight-service:last-of-type {
+  margin-right: 0;
+}
+
+.change-insight-img {
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.change-insight-img > img {
+  object-fit: cover;
+}
+
+.change-insight-img-background-overlay > h1,
+.change-insight-img-background-overlay {
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.change-insight-img-background-overlay > h1 {
+  color: var(--pure-white);
+  opacity: 0;
+}
+
+.change-insight-img-background-overlay {
+  background-color: var(--black);
+  opacity: 0;
+}
+
+.change-insight-img:hover .change-insight-img-background-overlay {
+  opacity: 0.8;
+}
+
+.change-insight-img:hover h1 {
+  opacity: 1;
+}
+
+.animate__fadeOut {
+  -webkit-animation: fadeOut forwards ease-in-out;
+  animation: fadeOut forwards ease-in-out;
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+}
+
+.animate__fadeIn {
+  -webkit-animation: fadeIn forwards ease-in-out;
+  animation: fadeIn forwards ease-in-out;
+  -webkit-animation-duration: 1.1s;
+  animation-duration: 1.1s;
+}
